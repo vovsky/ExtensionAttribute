@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+  ~ @author Volodymyr Vygovskyi
+  ~ @copyright Copyright (c) 2019 Volodymyr Vygovskyi
+  ~ @package Vovsky_ExtensionAttribute
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="sales_information" type="Vovsky\ExtensionAttribute\Api\Data\SalesInformationInterface" />
+    </extension_attributes>
+</config>

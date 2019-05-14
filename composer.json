@@ -1,0 +1,24 @@
+{
+    "name": "vovsky/extension-attribute",
+    "description": "",
+    "type": "magento2-module",
+    "license": [
+        "Commercial"
+    ],
+    "authors": [
+        {
+            "email": "vovskyi@gmail.com",
+            "name": "Vovsky"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Magebrew\\CustomerAccountLinks\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

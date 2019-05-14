@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  ~ @author Volodymyr Vygovskyi
+  ~ @copyright Copyright (c) 2019 Volodymyr Vygovskyi
+  ~ @package Vovsky_ExtensionAttribute
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Vovsky\ExtensionAttribute\Api\Data\SalesInformationInterface"
+                type="Vovsky\ExtensionAttribute\Model\SalesInformation"/>
+    <type name="Vovsky\ExtensionAttribute\Model\SalesInformation">
+        <arguments>
+            <argument name="orderStatus" xsi:type="string">pending</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Api\ProductRepositoryInterface">
+        <plugin name="addSalesInformationToProductRepositoryList"
+                type="Vovsky\ExtensionAttribute\Plugin\Product\Repository"/>
+    </type>
+</config>
