@@ -19,6 +19,9 @@ use Vovsky\ExtensionAttribute\Api\Data\SalesInformationInterface;
 use Vovsky\ExtensionAttribute\Service\GetLastOrderDateByProductService;
 use Vovsky\ExtensionAttribute\Service\GetProductQtyOrderedService;
 
+/**
+ * Class SalesInformation
+ */
 class SalesInformation extends AbstractExtensibleModel implements SalesInformationInterface
 {
     /**

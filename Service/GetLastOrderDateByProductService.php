@@ -9,6 +9,9 @@ namespace Vovsky\ExtensionAttribute\Service;
 
 use Magento\Framework\App\ResourceConnection;
 
+/**
+ * Class GetLastOrderDateByProductService
+ */
 class GetLastOrderDateByProductService
 {
     /**

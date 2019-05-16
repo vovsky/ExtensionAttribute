@@ -14,6 +14,9 @@ use Magento\Framework\Api\SearchResults;
 use Vovsky\ExtensionAttribute\Api\Data\SalesInformationInterface;
 use Vovsky\ExtensionAttribute\Api\Data\SalesInformationInterfaceFactory;
 
+/**
+ * Class Repository
+ */
 class Repository
 {
     /**
